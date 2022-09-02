@@ -1,0 +1,113 @@
+@font-face{
+    font-family: "Leelawadee";
+    src:url(/public/fonts/LEELAWAD.TTF)
+}
+
+.notesCard {
+    position: relative;
+    width: 310px;
+    height: 450px;
+    border: 5px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    box-shadow: 0px 3px 7px 0.5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.nCCtWrp {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.nCT {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.nCT-txt {
+    font-family: "Leelawadee";
+    font-size: 30px;
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.nCM {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nCM-txt {
+    font-family: "Leelawadee";
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    word-wrap: break-word;
+    
+    
+
+}
+
+.button-g {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 3px;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.noteBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.noteBtn:hover {
+    opacity: 0.5;
+}
+
+.markIcon {
+    display: block;
+    width: 25px;
+}
+
+.nDate{
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.5;
+    font-family: "Leelawadee";
+}

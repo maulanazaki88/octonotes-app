@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "Leelawadee";
+    src:url(/public/fonts/LEELAWAD.TTF)
+}
+.gridContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: fit-content;
+    list-style: none;
+
+}
+
+.gridItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

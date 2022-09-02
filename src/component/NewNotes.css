@@ -1,0 +1,85 @@
+@font-face{
+    font-family: "Leelawadee";
+    src:url(/public/fonts/LEELAWAD.TTF)
+}
+
+.newNotes {
+    position: relative;
+    width: 940px;
+    height: 450px;
+    background-color: #fff;
+    background-blend-mode: darken;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nNWrp {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.ttlField, .msgField {
+    border: none;
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 20px 0;
+}
+
+.inpTtl {
+    position: relative;
+    width: 500px;
+    height: 80px;
+    background-color: #999999;
+    color: #fff;
+    font-family: "Leelawadee";
+    font-size: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+
+}
+
+.inpTtl::placeholder {
+    color: #cbcbcb
+}
+
+.inpMsg {
+    max-width: 500px;
+    max-height: 225px;
+    background-color: transparent;
+    border: 3px solid gold;
+    font-family: "Leelawadee";
+    font-size: 22px;
+    color: #fff;
+    width: 500px;
+    height: 225px;
+    outline: none;
+}
+
+.submitBtn {
+    background-color: #fff;
+    font-family: "Leelawadee";
+    font-size: 22px;
+    color: #242424;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: 0px 3px 7px 0.5px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+
+}

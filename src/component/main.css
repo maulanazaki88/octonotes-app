@@ -1,0 +1,48 @@
+@font-face{
+    font-family: "Leelawadee";
+    src:url(/public/fonts/LEELAWAD.TTF)
+}
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/public/svg/night-blue.svg);
+
+}
+
+.brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.brand-logo {
+    display: block;
+}
+
+.displayTitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.title-txt {
+    color: #fff;
+    font-size: 50px;
+    font-family: "Leelawadee";
+    text-align: center;
+    font-weight: 500;
+    width: 100%
+}

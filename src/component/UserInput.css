@@ -1,0 +1,300 @@
+@font-face{
+    font-family: "Leelawadee";
+    src:url(/public/fonts/LEELAWAD.TTF)
+}
+
+.newNotes {
+    position: relative;
+    width: 940px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.45);
+    background-blend-mode: darken;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px
+}
+
+.off {
+    display: none;
+}
+
+.nNWrp {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.ttlField, .msgField {
+    border: none;
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px 0;
+    flex-direction: row;
+    
+}
+
+.inpTtl {
+    position: relative;
+    width: 440px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.12);
+    color: #fff;
+    font-family: "Leelawadee";
+    font-size: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 1rem;
+
+}
+
+.inpTtl::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.inpMsg {
+    max-width: 500px;
+    max-height: 225px;
+    background-color: transparent;
+    font-family: "Leelawadee";
+    font-size: 25px;
+    color: #fff;
+    width: 450px;
+    height: 225px;
+    outline: none;
+    padding: 0.5em;
+    outline: none;
+    border: none;
+}
+
+.inpMsg::placeholder {
+    color: #fff;
+}
+
+
+
+.submitBtn {
+    background-color: #fff;
+    font-family: "Leelawadee";
+    font-size: 22px;
+    color: #242424;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: 0px 3px 7px 0.5px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.6;
+    transition: all 0.15s ease-in;
+
+}
+
+.submitBtn:hover {
+    opacity: .8;
+}
+
+.userInput {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.uI-BtnG {
+    display: flex;
+    align-items: center;
+    width: 940px;
+    padding: 2em;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+
+.halt {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.18s ease-out;
+    outline: none;
+    border: none;
+    width: 220px;
+    height: 70px;
+    border-radius: 100vw;
+    background-color: #EAAFAF;
+    animation: resting 0.18s 1 cubic-bezier(0, 0.87, 0.5, 1);
+}
+
+.srcBtn, .bookMarkBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0, 0.87, 0.5, 1);
+    outline: none;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 100vw;
+    background-color: #EAAFAF;
+
+}
+
+.outlined {
+    width: 90px;
+    height: 90px;
+    border: 5px solid black;
+}
+
+.srcBtn {
+    margin-right: 20px;
+}
+
+.srcBtn:hover {
+    width: 220px;
+    border-radius: 100vw;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-left: 10px;
+
+}
+
+.bookMarkBtn:hover {
+    transform: scale(1.1);
+}
+
+.bookMarkBtn:active {
+    transform: scale(0.87)
+}
+
+.iconBtn {
+    display: block;
+    width: 36px;
+}
+
+
+
+.srcForm {
+    position: relative;
+    background-color: #EAAFAF;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-direction: row;
+    border-radius: 100vw;
+    margin-right: 20px;
+    transition: all 0.3s cubic-bezier(0, 0.87, 0.5, 1);
+
+}
+
+.prolong {
+    width: 520px;
+    transition: all 0.3s cubic-bezier(0, 0.87, 0.5, 1);
+    animation: prolong 0.3s 1 cubic-bezier(0, 0.87, 0.5, 1);
+
+}
+
+.srcInp {
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    font-size: 30px;
+    color: #242424;
+    font-family: "Leelawadee";
+    padding-left: 0.5em;
+}
+
+@-webkit-keyframes prolong {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 520px;
+    }
+}
+
+@-webkit-keyframes shorten {
+    from {
+        width: 520px;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+@-webkit-keyframes resting {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 70px;
+    }
+}
+
+@keyframes prolong {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 520px;
+    }
+}
+
+@keyframes shorten {
+    from {
+        width: 520px;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+@keyframes resting {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 70px;
+    }
+}
+
+.chrRmnsTtl, .chrRmnsMsg {
+    font-family: "Leelawadee";
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    margin-left: 45px;
+    opacity: 0.5
+}
+
+.alert {
+    color: gold;
+    opacity: 1;
+}
