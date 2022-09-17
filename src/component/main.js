@@ -22,66 +22,66 @@ class MainPage extends React.Component {
         weekday: "long",
         year: "numeric",
         month: "long",
-        day: "numeric"
-      }
-      return new Date(date).toLocaleDateString("id-ID", options)
-    }
+        day: "numeric",
+      };
+      return new Date(date).toLocaleDateString("id-ID", options);
+    };
     this.state = {
       notesArray: [
         {
           id: 1,
           title: "Babel",
-          message: "Babel merupakan tools open-source yang digunakan untuk mengubah sintaks ECMAScript 2015+ menjadi sintaks yang didukung oleh JavaScript engine versi lama. Babel sering dipakai ketika kita menggunakan sintaks terbaru termasuk sintaks JSX.",
-          date: this.showFormattedDate('2022-04-14T04:27:34.572Z'),
-          createdAt: '2022-04-14T04:27:34.572Z',
+          message:
+            "Babel merupakan tools open-source yang digunakan untuk mengubah sintaks ECMAScript 2015+ menjadi sintaks yang didukung oleh JavaScript engine versi lama. Babel sering dipakai ketika kita menggunakan sintaks terbaru termasuk sintaks JSX.",
+          date: this.showFormattedDate("2022-04-14T04:27:34.572Z"),
+          createdAt: "2022-04-14T04:27:34.572Z",
           isArchived: false,
-          
         },
         {
           id: 2,
           title: "Functional Component",
-          message: "Functional component merupakan React component yang dibuat menggunakan fungsi JavaScript. Agar fungsi JavaScript dapat disebut component ia harus mengembalikan React element dan dipanggil layaknya React component.",
-          date: this.showFormattedDate('2022-04-14T04:27:34.572Z'),
-          createdAt: '2022-04-14T04:27:34.572Z',
+          message:
+            "Functional component merupakan React component yang dibuat menggunakan fungsi JavaScript. Agar fungsi JavaScript dapat disebut component ia harus mengembalikan React element dan dipanggil layaknya React component.",
+          date: this.showFormattedDate("2022-04-14T04:27:34.572Z"),
+          createdAt: "2022-04-14T04:27:34.572Z",
           isArchived: false,
-          
         },
         {
           id: 3,
           title: "Modularization",
-          message: "Dalam konteks pemrograman JavaScript, modularization merupakan teknik dalam memecah atau menggunakan kode dalam berkas JavaScript secara terpisah berdasarkan tanggung jawabnya masing-masing.",
-          date: this.showFormattedDate('2022-04-14T04:27:34.572Z'),
-          createdAt: '2022-04-14T04:27:34.572Z',
+          message:
+            "Dalam konteks pemrograman JavaScript, modularization merupakan teknik dalam memecah atau menggunakan kode dalam berkas JavaScript secara terpisah berdasarkan tanggung jawabnya masing-masing.",
+          date: this.showFormattedDate("2022-04-14T04:27:34.572Z"),
+          createdAt: "2022-04-14T04:27:34.572Z",
           isArchived: false,
-          
         },
         {
           id: 4,
           title: "Lifecycle",
-          message: "Dalam konteks React component, lifecycle merupakan kumpulan method yang menjadi siklus hidup mulai dari component dibuat (constructor), dicetak (render), pasca-cetak (componentDidMount), dan sebagainya. ",
-          date: this.showFormattedDate('2022-04-14T04:27:34.572Z'),
-          createdAt: '2022-04-14T04:27:34.572Z',
+          message:
+            "Dalam konteks React component, lifecycle merupakan kumpulan method yang menjadi siklus hidup mulai dari component dibuat (constructor), dicetak (render), pasca-cetak (componentDidMount), dan sebagainya. ",
+          date: this.showFormattedDate("2022-04-14T04:27:34.572Z"),
+          createdAt: "2022-04-14T04:27:34.572Z",
           isArchived: false,
-          
         },
         {
           id: 5,
           title: "ESM",
-          message: "ESM (ECMAScript Module) merupakan format modularisasi standar JavaScript.",
-          date: this.showFormattedDate('2022-04-14T04:27:34.572Z'),
-          createdAt: '2022-04-14T04:27:34.572Z',
+          message:
+            "ESM (ECMAScript Module) merupakan format modularisasi standar JavaScript.",
+          date: this.showFormattedDate("2022-04-14T04:27:34.572Z"),
+          createdAt: "2022-04-14T04:27:34.572Z",
           isArchived: false,
-          
         },
         {
           id: 6,
           title: "Module Bundler",
-          message: "Dalam konteks pemrograman JavaScript, module bundler merupakan tools yang digunakan untuk menggabungkan seluruh modul JavaScript yang digunakan oleh aplikasi menjadi satu berkas.",
-          date: this.showFormattedDate('2022-04-14T04:27:34.572Z'),
-          createdAt: '2022-04-14T04:27:34.572Z',
+          message:
+            "Dalam konteks pemrograman JavaScript, module bundler merupakan tools yang digunakan untuk menggabungkan seluruh modul JavaScript yang digunakan oleh aplikasi menjadi satu berkas.",
+          date: this.showFormattedDate("2022-04-14T04:27:34.572Z"),
+          createdAt: "2022-04-14T04:27:34.572Z",
           isArchived: false,
-          
-        }
+        },
       ],
       archivedNotes: [],
       input: {
@@ -111,7 +111,6 @@ class MainPage extends React.Component {
     } else if (this.state.input.keywords.length !== 0) {
       let filtered = this.state.notesArray.filter(
         (note) =>
-          note.tag.includes(this.state.input.keywords) ||
           note.title.includes(this.state.input.keywords) ||
           note.message.includes(this.state.input.keywords)
       );
@@ -157,7 +156,6 @@ class MainPage extends React.Component {
       date: this.showFormattedDate(dateForm),
       isArchived: false,
       createdAt: `${dateString}, ${timeString}`,
-      
     };
     if (title.length === 0 && message.length === 0) {
       this.setState({ isTtlError: true, isMsgError: true }, () => {
@@ -370,7 +368,7 @@ class MainPage extends React.Component {
   }
 
   componentDidMount() {
-    document.title = "Octo Notes"
+    document.title = "Octo Notes";
     this.render();
   }
 
